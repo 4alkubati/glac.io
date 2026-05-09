@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Greenland Lawn Care services in Calgary — mowing, fertilizing, weed control, spring/fall cleanup, and general lawn maintenance." />
+  <title>Services | Greenland Lawn Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .services-full { padding: 80px 0; }
+    .services-list { display: flex; flex-direction: column; gap: 60px; }
+    .service-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .service-row:nth-child(even) .service-row-content { order: 2; }
+    .service-row:nth-child(even) .service-row-img    { order: 1; }
+    .service-row-img {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 16/10;
+      background: var(--green-pale);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 5rem;
+    }
+    .service-row-img img { width:100%; height:100%; object-fit:cover; }
+    .service-row-content .label { margin-bottom: 12px; }
+    .service-row-content h2 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    .service-row-content p { color: var(--text-mid); line-height: 1.7; margin-bottom: 24px; }
+    @media (max-width: 768px) {
+      .service-row { grid-template-columns: 1fr; }
+      .service-row:nth-child(even) .service-row-content { order: 0; }
+      .service-row:nth-child(even) .service-row-img    { order: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-socials">
+        <a href="https://www.facebook.com/share/1B53fH9sU2/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/greeland_lawn_care_services" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+      <div class="topbar-contact">
+        <a href="tel:+14039196986">+1 (403) 919-6986</a>
+        <a href="mailto:greenlawncare98@gmail.com">greenlawncare98@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-leaf">🌿</span>
+        <span class="logo-text">Greenland<br><small>Lawn Care</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="services.html" class="active">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <ul class="dropdown">
+            <li><a href="weedcontrol.html">Weed Control</a></li>
+            <li><a href="fertilizer.html">Fertilizer</a></li>
+            <li><a href="mowing.html">Mowing</a></li>
+            <li><a href="cleanup.html">Spring/Fall Cleaning</a></li>
+            <li><a href="maintenance.html">General Maintenance</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <h1>Our Services</h1>
+    <p>Professional lawn care for Calgary homeowners — from a single mow to full-season maintenance.</p>
+  </div>
+
+  <section class="services-full">
+    <div class="container">
+      <div class="services-list">
+
+        <div class="service-row">
+          <div class="service-row-img">✂️</div>
+          <div class="service-row-content">
+            <span class="label">Service</span>
+            <h2>Mowing</h2>
+            <p>Professional mowing tailored to your lawn's specific grass type and growth rate. We leave it neat, trimmed to the correct height, and edged clean every time. Consistent mowing is the foundation of a healthy lawn.</p>
+            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="service-row">
+          <div class="service-row-img">🍂</div>
+          <div class="service-row-content">
+            <span class="label">Service</span>
+            <h2>Spring / Fall Cleanup</h2>
+            <p>Seasonal cleanup to remove debris, dead leaves, and winter damage. We prep your soil and lawn so it's ready to thrive going into the next season. Essential for long-term lawn health in Calgary's climate.</p>
+            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="service-row">
+          <div class="service-row-img">🌱</div>
+          <div class="service-row-content">
+            <span class="label">Service</span>
+            <h2>Weed Control</h2>
+            <p>Targeted weed identification and removal before they take over. We use treatments that kill existing weeds and create a barrier against new growth — without damaging your grass.</p>
+            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="service-row">
+          <div class="service-row-img">💧</div>
+          <div class="service-row-content">
+            <span class="label">Service</span>
+            <h2>Fertilizer</h2>
+            <p>Custom fertilization plans based on your lawn's soil composition and seasonal needs. We apply the right nutrients at the right time to promote thick, green, resilient grass all season long.</p>
+            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="service-row">
+          <div class="service-row-img">🏡</div>
+          <div class="service-row-content">
+            <span class="label">Service</span>
+            <h2>General Lawn Maintenance</h2>
+            <p>Comprehensive care including edging, weeding, trimming, and everything in between. Ideal for homeowners who want a consistently maintained yard without the hassle. We handle it all so you don't have to.</p>
+            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Not sure which service you need?</h2>
+      <p>Contact us and we'll assess your lawn and recommend the right plan — free, no pressure.</p>
+      <a href="contact.html" class="btn btn-white btn-lg">Talk to Us</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-leaf">🌿</span>
+        <span class="logo-text">Greenland<br><small>Lawn Care</small></span>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="mowing.html">Mowing</a></li>
+            <li><a href="cleanup.html">Spring/Fall Cleaning</a></li>
+            <li><a href="maintenance.html">General Maintenance</a></li>
+            <li><a href="services.html">All Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul class="hours">
+            <li><span>Mon–Fri</span><span>8am – 8pm</span></li>
+            <li><span>Sat–Sun</span><span>10am – 8pm</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+14039196986">+1 (403) 919-6986</a></li>
+            <li><a href="mailto:greenlawncare98@gmail.com">greenlawncare98@gmail.com</a></li>
+            <li>Calgary, AB, Canada</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Find Us</h4>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/share/1B53fH9sU2/" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.instagram.com/greeland_lawn_care_services" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.linkedin.com/in/moealthilaya/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>©2025 Greenland Lawn Care. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

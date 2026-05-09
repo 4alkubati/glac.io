@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Greenland Lawn Care — Calgary's trusted local lawn care team led by founder Mohammed Nabil." />
+  <title>About | Greenland Lawn Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .about-section { padding: 96px 0; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .about-img {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      background: var(--green-pale);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 6rem;
+    }
+    .about-img img { width:100%; height:100%; object-fit:cover; }
+    .about-content h2 { font-family: var(--font-display); font-size: 2.4rem; margin-bottom: 20px; }
+    .about-content p { color: var(--text-mid); line-height: 1.75; margin-bottom: 20px; }
+    .about-values { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .value-item { background: var(--green-pale); border-radius: var(--radius); padding: 20px; }
+    .value-item strong { display: block; color: var(--green-dark); margin-bottom: 6px; }
+    .value-item p { font-size: 0.88rem; color: var(--text-mid); margin: 0; }
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .about-values { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-socials">
+        <a href="https://www.facebook.com/share/1B53fH9sU2/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+      <div class="topbar-contact">
+        <a href="tel:+14039196986">+1 (403) 919-6986</a>
+        <a href="mailto:greenlawncare98@gmail.com">greenlawncare98@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-leaf">🌿</span>
+        <span class="logo-text">Greenland<br><small>Lawn Care</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <ul class="dropdown">
+            <li><a href="weedcontrol.html">Weed Control</a></li>
+            <li><a href="fertilizer.html">Fertilizer</a></li>
+            <li><a href="mowing.html">Mowing</a></li>
+            <li><a href="cleanup.html">Spring/Fall Cleaning</a></li>
+            <li><a href="maintenance.html">General Maintenance</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <h1>About Us</h1>
+    <p>A Calgary-based team built on reliability, quality, and a genuine love for great-looking lawns.</p>
+  </div>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img">🌿</div>
+        <div class="about-content">
+          <span class="label">Our Story</span>
+          <h2>Calgary's Trusted Lawn Care Team</h2>
+          <p>Greenland Lawn Care was founded by Mohammed Nabil with one clear mission: to create and maintain beautiful, healthy lawns that enhance the beauty of every property we serve.</p>
+          <p>We started small — doing what we do best, showing up on time, and leaving every yard cleaner than we found it. Word spread fast. Today we serve homeowners across Calgary's NW, NE, SW, and SE quadrants.</p>
+          <p>We're not a franchise or a big corporate operation. We're a local team that actually cares about the quality of our work — and it shows in every mow, every cleanup, and every customer review.</p>
+          <div class="about-values">
+            <div class="value-item">
+              <strong>Always On Time</strong>
+              <p>We respect your schedule. If we say we'll be there, we'll be there.</p>
+            </div>
+            <div class="value-item">
+              <strong>Quality First</strong>
+              <p>Every job is done properly. No shortcuts, no half-measures.</p>
+            </div>
+            <div class="value-item">
+              <strong>Honest Pricing</strong>
+              <p>Free quotes, transparent rates. No surprise charges.</p>
+            </div>
+            <div class="value-item">
+              <strong>Eco-Conscious</strong>
+              <p>We use products that are safe for your family, pets, and environment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to work with us?</h2>
+      <p>Get your free, no-obligation quote today.</p>
+      <a href="contact.html" class="btn btn-white btn-lg">Get a Quote</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-leaf">🌿</span>
+        <span class="logo-text">Greenland<br><small>Lawn Care</small></span>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="mowing.html">Mowing</a></li>
+            <li><a href="cleanup.html">Spring/Fall Cleaning</a></li>
+            <li><a href="maintenance.html">General Maintenance</a></li>
+            <li><a href="services.html">All Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul class="hours">
+            <li><span>Mon–Fri</span><span>8am – 8pm</span></li>
+            <li><span>Sat–Sun</span><span>10am – 8pm</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+14039196986">+1 (403) 919-6986</a></li>
+            <li><a href="mailto:greenlawncare98@gmail.com">greenlawncare98@gmail.com</a></li>
+            <li>Calgary, AB, Canada</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Find Us</h4>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/share/1B53fH9sU2/" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.instagram.com/greeland_lawn_care_services" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.linkedin.com/in/moealthilaya/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>©2025 Greenland Lawn Care. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
