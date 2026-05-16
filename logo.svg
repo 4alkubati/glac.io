@@ -1,0 +1,35 @@
+<svg viewBox="0 0 540 165" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Clip to letter shapes so grass only appears inside letters -->
+    <clipPath id="tc">
+      <text x="45" y="155"
+            font-family="'Arial Black', 'Arial Bold', Arial, sans-serif"
+            font-size="98" font-weight="900" letter-spacing="-2">greenland</text>
+    </clipPath>
+  </defs>
+
+  <!-- Base text in charcoal -->
+  <text x="45" y="155"
+        font-family="'Arial Black', 'Arial Bold', Arial, sans-serif"
+        font-size="98" font-weight="900" fill="#3d3d3d" letter-spacing="-2">greenland</text>
+
+  <!-- Green grass band + blade tips, clipped to letter outlines -->
+  <g clip-path="url(#tc)">
+    <path fill="#4aaa60"
+      d="M0,62 L0,47 L6,62 L12,54 L18,62 L24,44 L30,62 L36,57 L42,62 L48,50 L54,62 L60,42 L66,62 L72,55 L78,62 L84,46 L90,62 L96,47 L102,62 L108,54 L114,62 L120,44 L126,62 L132,57 L138,62 L144,50 L150,62 L156,42 L162,62 L168,55 L174,62 L180,46 L186,62 L192,47 L198,62 L204,54 L210,62 L216,44 L222,62 L228,57 L234,62 L240,50 L246,62 L252,42 L258,62 L264,55 L270,62 L276,46 L282,62 L288,47 L294,62 L300,54 L306,62 L312,44 L318,62 L324,57 L330,62 L336,50 L342,62 L348,42 L354,62 L360,55 L366,62 L372,46 L378,62 L384,47 L390,62 L396,54 L402,62 L408,44 L414,62 L420,57 L426,62 L432,50 L438,62 L444,42 L450,62 L456,55 L462,62 L468,46 L474,62 L480,47 L486,62 L492,54 L498,62 L504,44 L510,62 L516,57 L522,62 L528,50 L534,62 L540,42 L546,62 L540,97 L0,97 Z"/>
+  </g>
+
+  <!-- Leaf sprout above the "g" -->
+  <!-- Left leaf -->
+  <path d="M 54 60
+           C 50 45 38 20 44 5
+           C 52 18 58 40 54 60 Z"
+        fill="#2e7d32"/>
+  <!-- Right leaf -->
+  <path d="M 60 58
+           C 68 42 80 18 72 4
+           C 64 18 56 42 60 58 Z"
+        fill="#43a047"/>
+  <!-- Stem -->
+  <line x1="57" y1="60" x2="57" y2="40" stroke="#2e7d32" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
