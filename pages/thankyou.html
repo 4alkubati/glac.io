@@ -3,33 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About Greenland Lawn Care — Calgary's trusted local lawn care team led by founder Mohammed Nabil." />
-  <title>About | Greenland Lawn Care</title>
+  <meta name="description" content="Thank you for contacting Greenland Lawn Care. We'll be in touch within 24 hours." />
+  <title>Thank You | Greenland Lawn Care</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
   <style>
-    .about-section { padding: 96px 0; }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-    .about-img {
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      aspect-ratio: 4/5;
-      background: var(--green-pale);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 6rem;
+    .thankyou-section {
+      padding: 120px 0 100px;
+      text-align: center;
     }
-    .about-img img { width:100%; height:100%; object-fit:cover; }
-    .about-content h2 { font-family: var(--font-display); font-size: 2.4rem; margin-bottom: 20px; }
-    .about-content p { color: var(--text-mid); line-height: 1.75; margin-bottom: 20px; }
-    .about-values { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    .value-item { background: var(--green-pale); border-radius: var(--radius); padding: 20px; }
-    .value-item strong { display: block; color: var(--green-dark); margin-bottom: 6px; }
-    .value-item p { font-size: 0.88rem; color: var(--text-mid); margin: 0; }
-    @media (max-width: 768px) {
-      .about-grid { grid-template-columns: 1fr; }
-      .about-values { grid-template-columns: 1fr; }
+    .thankyou-icon {
+      font-size: 4rem;
+      margin-bottom: 24px;
+    }
+    .thankyou-section h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--green-dark);
+      margin-bottom: 16px;
+    }
+    .thankyou-section p {
+      color: var(--text-mid);
+      font-size: 1.1rem;
+      max-width: 520px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+    .thankyou-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
     }
   </style>
 </head>
@@ -66,7 +72,7 @@
       </button>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li class="has-dropdown">
           <a href="services.html">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
           <ul class="dropdown">
@@ -85,49 +91,15 @@
     </nav>
   </header>
 
-  <div class="page-hero">
-    <h1>About Us</h1>
-    <p>A Calgary-based team built on reliability, quality, and a genuine love for great-looking lawns.</p>
-  </div>
-
-  <section class="about-section">
+  <section class="thankyou-section">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-img">🌿</div>
-        <div class="about-content">
-          <span class="label">Our Story</span>
-          <h2>Calgary's Trusted Lawn Care Team</h2>
-          <p>Greenland Lawn Care was founded by Mohammed Nabil with one clear mission: to create and maintain beautiful, healthy lawns that enhance the beauty of every property we serve.</p>
-          <p>We started small — doing what we do best, showing up on time, and leaving every yard cleaner than we found it. Word spread fast. Today we serve homeowners across Calgary's NW, NE, SW, and SE quadrants.</p>
-          <p>We're not a franchise or a big corporate operation. We're a local team that actually cares about the quality of our work — and it shows in every mow, every cleanup, and every customer review.</p>
-          <div class="about-values">
-            <div class="value-item">
-              <strong>Always On Time</strong>
-              <p>We respect your schedule. If we say we'll be there, we'll be there.</p>
-            </div>
-            <div class="value-item">
-              <strong>Quality First</strong>
-              <p>Every job is done properly. No shortcuts, no half-measures.</p>
-            </div>
-            <div class="value-item">
-              <strong>Honest Pricing</strong>
-              <p>Free quotes, transparent rates. No surprise charges.</p>
-            </div>
-            <div class="value-item">
-              <strong>Eco-Conscious</strong>
-              <p>We use products that are safe for your family, pets, and environment.</p>
-            </div>
-          </div>
-        </div>
+      <div class="thankyou-icon">✅</div>
+      <h1>Message Sent!</h1>
+      <p>Thanks for reaching out. We'll get back to you within 24 hours to discuss your lawn care needs.</p>
+      <div class="thankyou-actions">
+        <a href="../index.html" class="btn btn-primary btn-lg">Back to Home</a>
+        <a href="services.html" class="btn btn-outline btn-lg">View Services</a>
       </div>
-    </div>
-  </section>
-
-  <section class="cta-banner">
-    <div class="container">
-      <h2>Ready to work with us?</h2>
-      <p>Get your free, no-obligation quote today.</p>
-      <a href="contact.html" class="btn btn-white btn-lg">Get a Quote</a>
     </div>
   </section>
 
@@ -142,7 +114,11 @@
           <h4>Services</h4>
           <ul>
             <li><a href="mowing.html">Mowing</a></li>
-            <li><a href="cleanup.html">Spring/Fall Cleaning</a></li>
+            <li><a href="cleanup.html">Spring/Fall Cleanup</a></li>
+            <li><a href="weedcontrol.html">Weed Control</a></li>
+            <li><a href="fertilizer.html">Fertilizer</a></li>
+            <li><a href="power-rake.html">Power Rake</a></li>
+            <li><a href="core-aeration.html">Core Aeration</a></li>
             <li><a href="maintenance.html">General Maintenance</a></li>
             <li><a href="services.html">All Services</a></li>
           </ul>

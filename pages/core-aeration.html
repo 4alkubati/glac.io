@@ -3,34 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About Greenland Lawn Care — Calgary's trusted local lawn care team led by founder Mohammed Nabil." />
-  <title>About | Greenland Lawn Care</title>
+  <meta name="description" content="Professional core aeration in Calgary by Greenland Lawn Care. Loosen compacted soil, improve drainage, and build a deeper root system for a stronger lawn." />
+  <title>Core Aeration | Greenland Lawn Care</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
   <style>
-    .about-section { padding: 96px 0; }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-    .about-img {
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      aspect-ratio: 4/5;
+    .service-detail { padding: 80px 0; }
+    .service-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .service-detail-grid .icon-block {
       background: var(--green-pale);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 6rem;
+      border-radius: var(--radius-lg);
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8rem;
     }
-    .about-img img { width:100%; height:100%; object-fit:cover; }
-    .about-content h2 { font-family: var(--font-display); font-size: 2.4rem; margin-bottom: 20px; }
-    .about-content p { color: var(--text-mid); line-height: 1.75; margin-bottom: 20px; }
-    .about-values { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    .value-item { background: var(--green-pale); border-radius: var(--radius); padding: 20px; }
-    .value-item strong { display: block; color: var(--green-dark); margin-bottom: 6px; }
-    .value-item p { font-size: 0.88rem; color: var(--text-mid); margin: 0; }
-    @media (max-width: 768px) {
-      .about-grid { grid-template-columns: 1fr; }
-      .about-values { grid-template-columns: 1fr; }
+    .service-detail-content h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 12px 0 20px;
+      line-height: 1.15;
     }
+    .service-detail-content p { color: var(--text-mid); line-height: 1.75; margin-bottom: 20px; font-size: 1.05rem; }
+    .benefit-list { margin: 28px 0; display: flex; flex-direction: column; gap: 12px; }
+    .benefit-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      padding: 14px 16px; background: var(--green-pale); border-radius: var(--radius);
+    }
+    .benefit-item .check { color: var(--green-mid); font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+    .benefit-item p { margin: 0; color: var(--text-dark); font-size: 0.95rem; }
+    @media (max-width: 768px) { .service-detail-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -66,9 +76,9 @@
       </button>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li class="has-dropdown">
-          <a href="services.html">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <a href="services.html" class="active">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
           <ul class="dropdown">
             <li><a href="mowing.html">Mowing</a></li>
             <li><a href="cleanup.html">Spring/Fall Cleanup</a></li>
@@ -86,38 +96,43 @@
   </header>
 
   <div class="page-hero">
-    <h1>About Us</h1>
-    <p>A Calgary-based team built on reliability, quality, and a genuine love for great-looking lawns.</p>
+    <h1>Core Aeration</h1>
+    <p>Loosen compacted soil so water, air, and nutrients can reach deep into the root zone.</p>
   </div>
 
-  <section class="about-section">
+  <section class="service-detail">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-img">🌿</div>
-        <div class="about-content">
-          <span class="label">Our Story</span>
-          <h2>Calgary's Trusted Lawn Care Team</h2>
-          <p>Greenland Lawn Care was founded by Mohammed Nabil with one clear mission: to create and maintain beautiful, healthy lawns that enhance the beauty of every property we serve.</p>
-          <p>We started small — doing what we do best, showing up on time, and leaving every yard cleaner than we found it. Word spread fast. Today we serve homeowners across Calgary's NW, NE, SW, and SE quadrants.</p>
-          <p>We're not a franchise or a big corporate operation. We're a local team that actually cares about the quality of our work — and it shows in every mow, every cleanup, and every customer review.</p>
-          <div class="about-values">
-            <div class="value-item">
-              <strong>Always On Time</strong>
-              <p>We respect your schedule. If we say we'll be there, we'll be there.</p>
+      <div class="service-detail-grid">
+        <div class="icon-block">🕳️</div>
+        <div class="service-detail-content">
+          <span class="label">Service</span>
+          <h1>Core Aeration in Calgary</h1>
+          <p>Calgary's clay-heavy soil compacts easily under foot traffic, freezing, and thawing cycles. When soil is too dense, roots can't penetrate deeply, water pools on the surface, and fertilizer never reaches where it needs to go. The result: a shallow, weak lawn that struggles through summer heat and drought.</p>
+          <p>Core aeration uses a machine to pull small cylindrical plugs of soil — called cores — out of the ground across your entire lawn. The holes that are left behind allow air, water, and nutrients to move directly into the root zone. As the plugs break down over a few weeks, they help condition the soil and reduce compaction long-term.</p>
+          <p>We recommend aerating once a year in either spring or fall. It's one of the highest-return treatments you can do for a Calgary lawn, and it pairs exceptionally well with overseeding and fertilization applied immediately after.</p>
+          <div class="benefit-list">
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Breaks up compacted soil</strong> — roots can finally grow deeper and access the nutrients they need</p>
             </div>
-            <div class="value-item">
-              <strong>Quality First</strong>
-              <p>Every job is done properly. No shortcuts, no half-measures.</p>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Improves water absorption</strong> — stops pooling and runoff, every drop reaches the root zone</p>
             </div>
-            <div class="value-item">
-              <strong>Honest Pricing</strong>
-              <p>Free quotes, transparent rates. No surprise charges.</p>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Boosts fertilizer effectiveness</strong> — nutrients go directly into the soil instead of sitting on top</p>
             </div>
-            <div class="value-item">
-              <strong>Eco-Conscious</strong>
-              <p>We use products that are safe for your family, pets, and environment.</p>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Reduces thatch buildup</strong> — microbes in the cores help break down the thatch layer naturally</p>
+            </div>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Stronger, deeper roots</strong> — leads to a denser, more drought-resistant lawn all season long</p>
             </div>
           </div>
+          <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Quote</a>
         </div>
       </div>
     </div>
@@ -125,9 +140,9 @@
 
   <section class="cta-banner">
     <div class="container">
-      <h2>Ready to work with us?</h2>
-      <p>Get your free, no-obligation quote today.</p>
-      <a href="contact.html" class="btn btn-white btn-lg">Get a Quote</a>
+      <h2>Ready to build a stronger lawn from the ground up?</h2>
+      <p>Aeration is most effective in spring or fall — book before the season fills up.</p>
+      <a href="contact.html" class="btn btn-white btn-lg">Request a Quote</a>
     </div>
   </section>
 
@@ -142,7 +157,11 @@
           <h4>Services</h4>
           <ul>
             <li><a href="mowing.html">Mowing</a></li>
-            <li><a href="cleanup.html">Spring/Fall Cleaning</a></li>
+            <li><a href="cleanup.html">Spring/Fall Cleanup</a></li>
+            <li><a href="weedcontrol.html">Weed Control</a></li>
+            <li><a href="fertilizer.html">Fertilizer</a></li>
+            <li><a href="power-rake.html">Power Rake</a></li>
+            <li><a href="core-aeration.html">Core Aeration</a></li>
             <li><a href="maintenance.html">General Maintenance</a></li>
             <li><a href="services.html">All Services</a></li>
           </ul>

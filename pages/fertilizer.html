@@ -3,34 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About Greenland Lawn Care — Calgary's trusted local lawn care team led by founder Mohammed Nabil." />
-  <title>About | Greenland Lawn Care</title>
+  <meta name="description" content="Professional lawn fertilization in Calgary by Greenland Lawn Care. Custom nutrient plans that produce thick, green, resilient grass all season long." />
+  <title>Fertilization | Greenland Lawn Care</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
   <style>
-    .about-section { padding: 96px 0; }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-    .about-img {
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      aspect-ratio: 4/5;
+    .service-detail { padding: 80px 0; }
+    .service-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .service-detail-grid .icon-block {
       background: var(--green-pale);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 6rem;
+      border-radius: var(--radius-lg);
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8rem;
     }
-    .about-img img { width:100%; height:100%; object-fit:cover; }
-    .about-content h2 { font-family: var(--font-display); font-size: 2.4rem; margin-bottom: 20px; }
-    .about-content p { color: var(--text-mid); line-height: 1.75; margin-bottom: 20px; }
-    .about-values { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    .value-item { background: var(--green-pale); border-radius: var(--radius); padding: 20px; }
-    .value-item strong { display: block; color: var(--green-dark); margin-bottom: 6px; }
-    .value-item p { font-size: 0.88rem; color: var(--text-mid); margin: 0; }
-    @media (max-width: 768px) {
-      .about-grid { grid-template-columns: 1fr; }
-      .about-values { grid-template-columns: 1fr; }
+    .service-detail-content h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 12px 0 20px;
+      line-height: 1.15;
     }
+    .service-detail-content p { color: var(--text-mid); line-height: 1.75; margin-bottom: 20px; font-size: 1.05rem; }
+    .benefit-list { margin: 28px 0; display: flex; flex-direction: column; gap: 12px; }
+    .benefit-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      padding: 14px 16px; background: var(--green-pale); border-radius: var(--radius);
+    }
+    .benefit-item .check { color: var(--green-mid); font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+    .benefit-item p { margin: 0; color: var(--text-dark); font-size: 0.95rem; }
+    @media (max-width: 768px) { .service-detail-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -66,9 +76,9 @@
       </button>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li class="has-dropdown">
-          <a href="services.html">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <a href="services.html" class="active">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
           <ul class="dropdown">
             <li><a href="mowing.html">Mowing</a></li>
             <li><a href="cleanup.html">Spring/Fall Cleanup</a></li>
@@ -86,38 +96,43 @@
   </header>
 
   <div class="page-hero">
-    <h1>About Us</h1>
-    <p>A Calgary-based team built on reliability, quality, and a genuine love for great-looking lawns.</p>
+    <h1>Fertilization</h1>
+    <p>Feed your lawn exactly what it needs, when it needs it, for thick green grass all season.</p>
   </div>
 
-  <section class="about-section">
+  <section class="service-detail">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-img">🌿</div>
-        <div class="about-content">
-          <span class="label">Our Story</span>
-          <h2>Calgary's Trusted Lawn Care Team</h2>
-          <p>Greenland Lawn Care was founded by Mohammed Nabil with one clear mission: to create and maintain beautiful, healthy lawns that enhance the beauty of every property we serve.</p>
-          <p>We started small — doing what we do best, showing up on time, and leaving every yard cleaner than we found it. Word spread fast. Today we serve homeowners across Calgary's NW, NE, SW, and SE quadrants.</p>
-          <p>We're not a franchise or a big corporate operation. We're a local team that actually cares about the quality of our work — and it shows in every mow, every cleanup, and every customer review.</p>
-          <div class="about-values">
-            <div class="value-item">
-              <strong>Always On Time</strong>
-              <p>We respect your schedule. If we say we'll be there, we'll be there.</p>
+      <div class="service-detail-grid">
+        <div class="icon-block">💧</div>
+        <div class="service-detail-content">
+          <span class="label">Service</span>
+          <h1>Lawn Fertilization in Calgary</h1>
+          <p>Calgary's soil is notoriously deficient in key nutrients — particularly nitrogen, which is responsible for the deep green colour and vigorous growth most homeowners want. Without regular fertilization, even a well-watered and mowed lawn will slowly thin out, fade, and lose ground to weeds.</p>
+          <p>We build a custom fertilization plan based on your lawn's grass type, current condition, and the season. We apply slow-release granular fertilizers that feed your lawn steadily over 6–8 weeks, rather than delivering a quick surge that leads to overgrowth and burnout.</p>
+          <p>We typically recommend 3 applications per season: an early-season application in May to kick-start growth, a mid-season top-up in July, and a late-season feeding in September that helps the lawn store energy for winter and come back stronger in spring.</p>
+          <div class="benefit-list">
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Custom nutrient plan</strong> — matched to your grass type and what your lawn is actually missing</p>
             </div>
-            <div class="value-item">
-              <strong>Quality First</strong>
-              <p>Every job is done properly. No shortcuts, no half-measures.</p>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Slow-release granular formula</strong> — steady feeding over 6–8 weeks instead of a burst-and-fade cycle</p>
             </div>
-            <div class="value-item">
-              <strong>Honest Pricing</strong>
-              <p>Free quotes, transparent rates. No surprise charges.</p>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>3-round seasonal program</strong> — spring, summer, and fall applications for year-round health</p>
             </div>
-            <div class="value-item">
-              <strong>Eco-Conscious</strong>
-              <p>We use products that are safe for your family, pets, and environment.</p>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Safe for kids and pets</strong> — once the product is watered in, your lawn is ready to use</p>
+            </div>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Pairs perfectly with aeration</strong> — nutrients penetrate 10x deeper through aeration holes</p>
             </div>
           </div>
+          <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Quote</a>
         </div>
       </div>
     </div>
@@ -125,9 +140,9 @@
 
   <section class="cta-banner">
     <div class="container">
-      <h2>Ready to work with us?</h2>
-      <p>Get your free, no-obligation quote today.</p>
-      <a href="contact.html" class="btn btn-white btn-lg">Get a Quote</a>
+      <h2>Ready for your greenest lawn yet?</h2>
+      <p>A proper fertilization program pays for itself in the thickness and colour you get back.</p>
+      <a href="contact.html" class="btn btn-white btn-lg">Request a Quote</a>
     </div>
   </section>
 
@@ -142,7 +157,11 @@
           <h4>Services</h4>
           <ul>
             <li><a href="mowing.html">Mowing</a></li>
-            <li><a href="cleanup.html">Spring/Fall Cleaning</a></li>
+            <li><a href="cleanup.html">Spring/Fall Cleanup</a></li>
+            <li><a href="weedcontrol.html">Weed Control</a></li>
+            <li><a href="fertilizer.html">Fertilizer</a></li>
+            <li><a href="power-rake.html">Power Rake</a></li>
+            <li><a href="core-aeration.html">Core Aeration</a></li>
             <li><a href="maintenance.html">General Maintenance</a></li>
             <li><a href="services.html">All Services</a></li>
           </ul>
