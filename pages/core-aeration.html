@@ -3,12 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Greenland Lawn Care in Calgary for a free lawn care quote. Call, email, or fill out our form." />
-  <title>Contact | Greenland Lawn Care</title>
+  <meta name="description" content="Professional core aeration in Calgary by Greenland Lawn Care. Loosen compacted soil, improve drainage, and build a deeper root system for a stronger lawn." />
+  <title>Core Aeration | Greenland Lawn Care</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .service-detail { padding: 80px 0; }
+    .service-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .service-detail-grid .icon-block {
+      background: var(--green-pale);
+      border-radius: var(--radius-lg);
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8rem;
+    }
+    .service-detail-content h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 12px 0 20px;
+      line-height: 1.15;
+    }
+    .service-detail-content p {
+      color: var(--text-mid);
+      line-height: 1.75;
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+    }
+    .benefit-list { margin: 28px 0; display: flex; flex-direction: column; gap: 12px; }
+    .benefit-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 16px;
+      background: var(--green-pale);
+      border-radius: var(--radius);
+    }
+    .benefit-item .check { color: var(--green-mid); font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+    .benefit-item p { margin: 0; color: var(--text-dark); font-size: 0.95rem; }
+    @media (max-width: 768px) {
+      .service-detail-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
@@ -46,7 +90,7 @@
         <li><a href="../index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li class="has-dropdown">
-          <a href="services.html">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <a href="services.html" class="active">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
           <ul class="dropdown">
             <li><a href="mowing.html">Mowing</a></li>
             <li><a href="cleanup.html">Spring/Fall Cleanup</a></li>
@@ -57,103 +101,62 @@
             <li><a href="maintenance.html">General Maintenance</a></li>
           </ul>
         </li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
     </nav>
   </header>
 
   <div class="page-hero">
-    <h1>Get a Free Quote</h1>
-    <p>Reach out and we'll build a custom lawn care plan that fits your yard and budget.</p>
+    <h1>Core Aeration</h1>
+    <p>Loosen compacted soil so water, air, and nutrients can reach deep into the root zone.</p>
   </div>
 
-  <section class="contact-section">
+  <section class="service-detail">
     <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h2>Let's Talk</h2>
-          <p>We serve Calgary and surrounding areas. Whether you need a one-time cleanup or full-season care, we've got you covered.</p>
-          <div class="contact-detail">
-            <div class="contact-detail-item">
-              <div class="icon">📞</div>
-              <div>
-                <strong>Phone</strong>
-                <a href="tel:+14039196986">+1 (403) 919-6986</a>
-              </div>
+      <div class="service-detail-grid">
+        <div class="icon-block">🕳️</div>
+        <div class="service-detail-content">
+          <span class="label">Service</span>
+          <h1>Core Aeration in Calgary</h1>
+          <p>Calgary's clay-heavy soil compacts easily under foot traffic, freezing, and thawing cycles. When soil is too dense, roots can't penetrate deeply, water pools on the surface, and fertilizer never reaches where it needs to go. The result: a shallow, weak lawn that struggles through summer heat and drought.</p>
+          <p>Core aeration uses a machine to pull small cylindrical plugs of soil — called cores — out of the ground across your entire lawn. The holes that are left behind allow air, water, and nutrients to move directly into the root zone. As the plugs break down over a few weeks, they help condition the soil and reduce compaction long-term.</p>
+          <p>We recommend aerating once a year in either spring or fall. It's one of the highest-return treatments you can do for a Calgary lawn, and it pairs exceptionally well with overseeding and fertilization applied immediately after.</p>
+
+          <div class="benefit-list">
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Breaks up compacted soil</strong> — roots can finally grow deeper and access the nutrients they need</p>
             </div>
-            <div class="contact-detail-item">
-              <div class="icon">✉️</div>
-              <div>
-                <strong>Email</strong>
-                <a href="mailto:greenlawncare98@gmail.com">greenlawncare98@gmail.com</a>
-              </div>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Improves water absorption</strong> — stops pooling and runoff, every drop reaches the root zone</p>
             </div>
-            <div class="contact-detail-item">
-              <div class="icon">📍</div>
-              <div>
-                <strong>Location</strong>
-                <span>Calgary, AB, Canada</span>
-              </div>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Boosts fertilizer effectiveness</strong> — nutrients go directly into the soil instead of sitting on top</p>
             </div>
-            <div class="contact-detail-item">
-              <div class="icon">🕐</div>
-              <div>
-                <strong>Hours</strong>
-                <span>Mon–Fri 8am–8pm · Sat–Sun 10am–8pm</span>
-              </div>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Reduces thatch buildup</strong> — microbes in the cores help break down the thatch layer naturally</p>
+            </div>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Stronger, deeper roots</strong> — leads to a denser, more drought-resistant lawn all season long</p>
             </div>
           </div>
-        </div>
 
-        <div class="form-card">
-          <!--
-            FORMSPREE SETUP (takes 2 minutes):
-            1. Go to https://formspree.io → create a free account
-            2. Click "New Form" → name it "Greenland Quote Requests"
-            3. Copy the Form ID (e.g. "xpzvwkgb")
-            4. Replace YOUR_FORM_ID below with that ID
-            5. Formspree emails you every submission + stores them in the dashboard
-               → Export to CSV/Excel any time from your Formspree dashboard
-            6. Optional: connect Formspree → Notion via Zapier (free tier) for auto-logging
-          -->
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="quote-form">
-            <input type="hidden" name="_subject" value="New Quote Request – Greenland Lawn Care" />
-            <div class="form-group">
-              <label for="full-name">Full Name *</label>
-              <input type="text" id="full-name" name="full_name" placeholder="John Smith" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" placeholder="john@example.com" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number *</label>
-              <input type="tel" id="phone" name="phone" placeholder="+1 (403) 000-0000" required />
-            </div>
-            <div class="form-group">
-              <label for="service">Service Needed *</label>
-              <select id="service" name="service" required>
-                <option value="">Select a service...</option>
-                <option>Mowing</option>
-                <option>Spring / Fall Cleanup</option>
-                <option>Weed Control</option>
-                <option>Fertilizer</option>
-                <option>Power Rake</option>
-                <option>Core Aeration</option>
-                <option>General Maintenance</option>
-                <option>Multiple Services / Not Sure</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Message — describe what you need</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell us about your lawn, property size, and anything else that helps us quote you accurately..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Send Message →</button>
-            <p style="font-size:0.78rem;color:var(--text-muted);text-align:center;margin-top:12px;">We respond within 24 hours. No spam, ever.</p>
-          </form>
+          <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Quote</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to build a stronger lawn from the ground up?</h2>
+      <p>Aeration is most effective in spring or fall — book before the season fills up.</p>
+      <a href="contact.html" class="btn btn-white btn-lg">Request a Quote</a>
     </div>
   </section>
 

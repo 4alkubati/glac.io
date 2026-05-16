@@ -3,12 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Greenland Lawn Care in Calgary for a free lawn care quote. Call, email, or fill out our form." />
-  <title>Contact | Greenland Lawn Care</title>
+  <meta name="description" content="Professional spring and fall lawn cleanup in Calgary by Greenland Lawn Care. Remove debris, prep soil, and get your yard ready for the season ahead." />
+  <title>Spring & Fall Cleanup | Greenland Lawn Care</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .service-detail { padding: 80px 0; }
+    .service-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .service-detail-grid .icon-block {
+      background: var(--green-pale);
+      border-radius: var(--radius-lg);
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8rem;
+    }
+    .service-detail-content h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 12px 0 20px;
+      line-height: 1.15;
+    }
+    .service-detail-content p { color: var(--text-mid); line-height: 1.75; margin-bottom: 20px; font-size: 1.05rem; }
+    .benefit-list { margin: 28px 0; display: flex; flex-direction: column; gap: 12px; }
+    .benefit-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      padding: 14px 16px; background: var(--green-pale); border-radius: var(--radius);
+    }
+    .benefit-item .check { color: var(--green-mid); font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+    .benefit-item p { margin: 0; color: var(--text-dark); font-size: 0.95rem; }
+    @media (max-width: 768px) { .service-detail-grid { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
 
@@ -37,7 +70,6 @@
       <a href="../index.html" class="nav-logo">
         <span class="logo-leaf">🌿</span>
         <span class="logo-text">Greenland<br><small>Lawn Care</small></span>
-        
       </a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -46,7 +78,7 @@
         <li><a href="../index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li class="has-dropdown">
-          <a href="services.html">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <a href="services.html" class="active">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
           <ul class="dropdown">
             <li><a href="mowing.html">Mowing</a></li>
             <li><a href="cleanup.html">Spring/Fall Cleanup</a></li>
@@ -57,103 +89,60 @@
             <li><a href="maintenance.html">General Maintenance</a></li>
           </ul>
         </li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
     </nav>
   </header>
 
   <div class="page-hero">
-    <h1>Get a Free Quote</h1>
-    <p>Reach out and we'll build a custom lawn care plan that fits your yard and budget.</p>
+    <h1>Spring & Fall Cleanup</h1>
+    <p>Remove the debris of one season and set your lawn up to thrive in the next.</p>
   </div>
 
-  <section class="contact-section">
+  <section class="service-detail">
     <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h2>Let's Talk</h2>
-          <p>We serve Calgary and surrounding areas. Whether you need a one-time cleanup or full-season care, we've got you covered.</p>
-          <div class="contact-detail">
-            <div class="contact-detail-item">
-              <div class="icon">📞</div>
-              <div>
-                <strong>Phone</strong>
-                <a href="tel:+14039196986">+1 (403) 919-6986</a>
-              </div>
+      <div class="service-detail-grid">
+        <div class="icon-block">🍂</div>
+        <div class="service-detail-content">
+          <span class="label">Service</span>
+          <h1>Spring & Fall Cleanup in Calgary</h1>
+                    <p>Calgary winters are hard on lawns. By the time spring arrives, your yard is often covered in matted leaves, dead grass, twigs, and soil that's been compacted under months of snow and ice. Skipping the cleanup means your lawn is trying to grow through all of that debris — and it will lose.</p>
+          <p>Our spring cleanup removes everything that's been sitting on your lawn over winter, dethatch the surface layer, and leaves you with a clean slate for the growing season. We also do a final mow and edge to get things looking sharp.</p>
+          <p>Fall cleanup is just as important. Leaving leaf cover on the lawn through winter creates matted layers that suffocate the grass underneath and trap moisture that leads to disease. We clear everything before the first snow so your lawn can go into winter clean.</p>
+          <div class="benefit-list">
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Full debris removal</strong> — leaves, dead grass, sticks, and anything else that accumulated over the season</p>
             </div>
-            <div class="contact-detail-item">
-              <div class="icon">✉️</div>
-              <div>
-                <strong>Email</strong>
-                <a href="mailto:greenlawncare98@gmail.com">greenlawncare98@gmail.com</a>
-              </div>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Surface dethatching</strong> — loosen the top layer so the new growth has a clear path</p>
             </div>
-            <div class="contact-detail-item">
-              <div class="icon">📍</div>
-              <div>
-                <strong>Location</strong>
-                <span>Calgary, AB, Canada</span>
-              </div>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Final mow and edge</strong> — leave everything looking clean and ready</p>
             </div>
-            <div class="contact-detail-item">
-              <div class="icon">🕐</div>
-              <div>
-                <strong>Hours</strong>
-                <span>Mon–Fri 8am–8pm · Sat–Sun 10am–8pm</span>
-              </div>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Bed cleanup included</strong> — we clear the garden beds and borders while we're at it</p>
+            </div>
+            <div class="benefit-item">
+              <span class="check">✓</span>
+              <p><strong>Spring and fall scheduling available</strong> — book both at a discounted bundle rate</p>
             </div>
           </div>
-        </div>
-
-        <div class="form-card">
-          <!--
-            FORMSPREE SETUP (takes 2 minutes):
-            1. Go to https://formspree.io → create a free account
-            2. Click "New Form" → name it "Greenland Quote Requests"
-            3. Copy the Form ID (e.g. "xpzvwkgb")
-            4. Replace YOUR_FORM_ID below with that ID
-            5. Formspree emails you every submission + stores them in the dashboard
-               → Export to CSV/Excel any time from your Formspree dashboard
-            6. Optional: connect Formspree → Notion via Zapier (free tier) for auto-logging
-          -->
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="quote-form">
-            <input type="hidden" name="_subject" value="New Quote Request – Greenland Lawn Care" />
-            <div class="form-group">
-              <label for="full-name">Full Name *</label>
-              <input type="text" id="full-name" name="full_name" placeholder="John Smith" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" placeholder="john@example.com" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number *</label>
-              <input type="tel" id="phone" name="phone" placeholder="+1 (403) 000-0000" required />
-            </div>
-            <div class="form-group">
-              <label for="service">Service Needed *</label>
-              <select id="service" name="service" required>
-                <option value="">Select a service...</option>
-                <option>Mowing</option>
-                <option>Spring / Fall Cleanup</option>
-                <option>Weed Control</option>
-                <option>Fertilizer</option>
-                <option>Power Rake</option>
-                <option>Core Aeration</option>
-                <option>General Maintenance</option>
-                <option>Multiple Services / Not Sure</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Message — describe what you need</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell us about your lawn, property size, and anything else that helps us quote you accurately..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Send Message →</button>
-            <p style="font-size:0.78rem;color:var(--text-muted);text-align:center;margin-top:12px;">We respond within 24 hours. No spam, ever.</p>
-          </form>
+          <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Quote</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Start the season right.</h2>
+      <p>A proper cleanup sets your lawn up for its best year. Book before the rush.</p>
+      <a href="contact.html" class="btn btn-white btn-lg">Request a Quote</a>
     </div>
   </section>
 
@@ -162,7 +151,7 @@
       <div class="footer-brand">
         <span class="logo-leaf">🌿</span>
         <span class="logo-text">Greenland<br><small>Lawn Care</small></span>
-        </div>
+      </div>
       <div class="footer-cols">
         <div class="footer-col">
           <h4>Services</h4>
