@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 100" width="480" height="100">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;display=swap');
+      text { font-family: 'DM Serif Display', Georgia, serif; }
+    </style>
+  </defs>
+  <!-- "Greenland" in DM Serif Display, site's dark green -->
+  <text x="20" y="76" font-size="80" fill="#1a4d2a" font-family="'DM Serif Display', Georgia, serif" letter-spacing="-1">Greenland</text>
+</svg>
