@@ -506,30 +506,27 @@ ul { list-style: none; }
    GALLERY
 =========================== */
 .gallery-section { padding: 96px 0; }
-.gallery {
+.gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
-  gap: 16px;
+  grid-template-columns: 1fr 1.6fr 1fr;
+  gap: 10px;
+  height: 440px;
 }
-.gallery-item {
+.gallery-cell {
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--green-pale);
-  aspect-ratio: 4/3;
   position: relative;
 }
-.gallery-item:first-child {
-  grid-column: 1 / 3;
-  aspect-ratio: 16/9;
-}
-.gallery-item img {
+.gallery-cell img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  display: block;
+  transition: opacity 0.4s ease, transform 0.5s ease;
 }
-.gallery-item:hover img { transform: scale(1.05); }
+.gallery-cell:hover img { transform: scale(1.04); }
+.gallery-cell--rotator img { transition: opacity 0.4s ease, transform 0.5s ease; }
 
 /* ===========================
    TESTIMONIALS
@@ -876,8 +873,7 @@ ul { list-style: none; }
   .services-grid { grid-template-columns: 1fr; }
   .reviews-grid  { grid-template-columns: 1fr; }
 
-  .gallery { grid-template-columns: 1fr 1fr; }
-  .gallery-item:first-child { grid-column: 1 / 3; }
+  .gallery-grid { grid-template-columns: 1fr 1.6fr 1fr; height: 300px; }
 
   .footer-inner { grid-template-columns: 1fr; gap: 40px; }
   .footer-cols  { grid-template-columns: 1fr 1fr; }
@@ -889,7 +885,18 @@ ul { list-style: none; }
 
 @media (max-width: 480px) {
   .hero-actions { flex-direction: column; }
-  .gallery { grid-template-columns: 1fr; }
-  .gallery-item:first-child { grid-column: 1; }
+  .gallery-grid { grid-template-columns: 1fr; height: auto; }
+  .gallery-cell { height: 260px; }
   .footer-cols { grid-template-columns: 1fr; }
+}
+
+/* service detail icon-block with real images */
+.icon-block { overflow: hidden; }
+.icon-block img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.hero-trust {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
 }

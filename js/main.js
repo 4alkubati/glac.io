@@ -48,6 +48,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // --- GALLERY ROTATOR ---
+  const rotatorImages = [
+    'IMAGES/General1.jpeg',
+    'IMAGES/general2.jpeg',
+    'IMAGES/General3.jpeg'
+  ];
+  let rotatorIndex = 0;
+  const rotatorEl = document.getElementById('gallery-rotator');
+  if (rotatorEl) {
+    const rotatorImg = rotatorEl.querySelector('img');
+    setInterval(() => {
+      rotatorImg.style.opacity = '0';
+      setTimeout(() => {
+        rotatorIndex = (rotatorIndex + 1) % rotatorImages.length;
+        rotatorImg.src = rotatorImages[rotatorIndex];
+        rotatorImg.style.opacity = '1';
+      }, 400);
+    }, 5000);
+  }
+
   // --- ACTIVE NAV LINK ---
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
   const navAnchors = document.querySelectorAll('.nav-links a');
